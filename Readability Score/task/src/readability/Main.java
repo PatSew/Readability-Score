@@ -11,26 +11,12 @@ public class Main {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws IOException {
         String input = readFileAsString(args[0]);
-
         int w = countWords(input);
         int s = countSentences(input);
         int c = countChars(input);
         int sy = countSyllables(input);
         int po = countPolysyllables(input);
         choice(w, s, c, sy, po);
-
-
-        /*System.out.println("Enter the score you want to calculate (ARI, FK, SMOG, CL, all): ");
-        String choice = scanner.nextLine();
-
-        switch (choice) {
-            case "ARI":
-
-        }
-
-        System.out.println("The score is: " + String.format("%.2f", aRI(c, w, s)));
-
-        System.out.println("This text should be understood by " + retAge(aRI(c, w, s)) + " year olds.");*/
     }
 
     public static void choice(int w, int s, int c, int sy, int po) {
